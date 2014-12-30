@@ -1,0 +1,2 @@
+module UserhsHelper
+end

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @userh.email %>
+</p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @userh.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @userh.lname %>
+</p>
+
+<p>
+  <strong>Url1:</strong>
+  <%= @userh.url1 %>
+</p>
+
+<p>QR</p>
+
+<figure style=" width: 10%; height: 10%; ">
+    	<img src=<%= @qrhash %> style=" max-width: 100%; "/>
+</figure>
+
+<%= link_to 'Edit', edit_userh_path(@userh) %> |
+<%= link_to 'Back', userhs_path %>
