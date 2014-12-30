@@ -9,7 +9,7 @@ class UserhsController < ApplicationController
   end
 
   def show
-    @userh  = Userh.find_by_email(current_user.email)
+   
     if ! @userh.nil?
       if ! @userh.qrhash.nil?
         @qrhash = '../qrhndl/qrgen.svg?qrhash=' + @userh.qrhash
