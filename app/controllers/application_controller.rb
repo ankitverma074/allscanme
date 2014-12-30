@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
           
 #  Now replace with URL based qrhash in DB         
           @userdb = Userh.find_by_email(current_user.email)
-          @userdb.qrhash = 'localhost:3000/userhs/' + @userdb.id.to_s
+          @userdb.qrhash = 'allscanme.herokuapp.com/userhs/' + @userdb.id.to_s
           @userdb.save  
           
           return @path 
